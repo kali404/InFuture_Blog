@@ -5,6 +5,7 @@ body{
     padding: 0;
     width: 100%;
     overflow-y:hidden;
+    overflow-x: hidden;
 }
 #wrap{
     /* 绝对定位 */
@@ -20,11 +21,13 @@ body{
     justify-content: center;    
 }
 #page3{
-    /* background:linear-gradient(180deg,#ecdc80,#94ee80); */
-    background-image: url("../img/363.png");
+    background:linear-gradient(180deg,#ecdc80,#94ee80);
+    /* background-image: url("../img/363.png");
     -moz-background-size:100% 80%;
-    background-size:100% 80%;
+    background-size:100% 80%;*/
+
 }
+
 #page4{
     background:linear-gradient(80deg,#8fafef,#cc6eda);
 }
@@ -188,25 +191,20 @@ body{
 
 
 
-#page3 {
-  /* background:radial-gradient(ellipse at center, rgba(255, 230, 185, 0.856) 0%, rgb(104, 241, 253) 35%, #83cbff 100%); */
-  /* 当元素内的内容溢出的时候使它隐藏溢出的部分，即超出部分隐藏。 */
-  overflow: hidden;
-}
 .ocean { 
     height: 6%;
     width:100%;
     /* 绝对定位,受上级标签影响 */
     position:relative;
-    top: 600px;
-    /* bottom: 10; */
+    top: 0px;
+    /* bottom: 0; */
     left:0;
-    background: #015871;
+    background: #0067ec;
 
   }
   
   .wave {
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+    background: url("../img/wave.svg") repeat-x; 
     position: relative;
     top: -198px;
     width: 6400px;

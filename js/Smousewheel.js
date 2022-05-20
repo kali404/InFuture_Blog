@@ -14,7 +14,7 @@ let index = 1;
 let curIndex = 1; //记录当前的页面
 let wrap=document.querySelector("#wrap");
 let pageNum=document.querySelectorAll(".page").length;
-let hei = 1978;
+let hei = window.innerHeight;
 //如果不加时间控制，滚动会过度灵敏，一次翻好几屏
 let startTime = 0, //翻屏起始时间
   endTime = 0,
