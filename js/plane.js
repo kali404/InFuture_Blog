@@ -10,14 +10,15 @@ window.addEventListener('mousemove',(e)=>{
     count=0;
 })
 function draw(){
-    plane.style.transform='rotate('+deg+'deg)';
-    if(count<100){
-        vx+=ex/100;
-        vy+=ey/100;
+    if(index == 2){
+        plane.style.transform='rotate('+deg+'deg)';
+        if(count<100){
+            vx+=ex/100;
+            vy+=ey/100;
+        }
+        plane.style.left = vx+'px';
+        plane.style.top=vy+'px';
+        count++;
     }
-    plane.style.left = vx+'px';
-    plane.style.top=vy+'px';
-    count++;
-
 }
 setInterval(draw,1);
