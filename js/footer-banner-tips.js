@@ -19,7 +19,7 @@ var typed = new Typed(".text", {
 
 
 document.getElementsByClassName("headimg")[0].style.marginTop=((window.innerHeight/3)-180)+"px";
-document.getElementsByClassName("hello")[0].style.marginTop = window.innerHeight/10 +"px";
+document.getElementsByClassName("hello")[0].style.marginTop = window.innerHeight/7 +"px";
 document.getElementsByClassName("container")[0].style.top = (window.innerHeight-document.getElementsByClassName("container")[0].clientHeight)/2+"px";
 document.getElementsByClassName("page")[0].style.height = window.innerHeight + "px";
 document.getElementsByClassName("page")[1].style.height = window.innerHeight + "px";
@@ -33,7 +33,7 @@ function resizeBannerImage() {
     if ($(window).width() > 600) {
         hei = window.innerHeight;
         document.getElementsByClassName("headimg")[0].style.marginTop=((window.innerHeight/3)-180)+"px";
-        document.getElementsByClassName("hello")[0].style.marginTop = window.innerHeight/10 +"px";
+        document.getElementsByClassName("hello")[0].style.marginTop = window.innerHeight/7 + "px";
         document.getElementsByClassName("container")[0].style.top =(window.innerHeight-document.getElementsByClassName("container")[0].clientHeight)/2+"px";
         document.getElementsByClassName("page")[0].style.height = window.innerHeight + "px";
         document.getElementsByClassName("page")[1].style.height = window.innerHeight + "px";
