@@ -17,7 +17,6 @@ var typed = new Typed(".text", {
     fadeOut:true,//淡出效果
     });
 
-
 document.getElementsByClassName("headimg")[0].style.marginTop=((window.innerHeight/3)-180)+"px";
 document.getElementsByClassName("hello")[0].style.marginTop = window.innerHeight/7 +"px";
 document.getElementsByClassName("container")[0].style.top = (window.innerHeight-document.getElementsByClassName("container")[0].clientHeight)/2+"px";
@@ -42,3 +41,7 @@ function resizeBannerImage() {
     }
 }
 
+VanillaTilt.init(document.querySelectorAll(".vard"), {
+    max: 25,
+    speed: 400
+});
